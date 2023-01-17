@@ -1,0 +1,31 @@
+<div id="quote-box">
+  <p id="text"></p>
+</div>
+
+<script>
+  // array of quotes
+  var quotes = [
+    { text: "Turning strangers into nutritionists since 2018!"},
+    { text: "Eat your veggies!"},
+    { text: "\"I just think they're neat!\" -Marge Simpson, about potatoes"},
+    { text: "Recipes & stuff"},
+    { text: "Worship Seitan"},
+    { text: "Because eating animals is just weird"},
+    { text: "Because you are not a baby cow"},
+    { text: "Give peas a chance"},
+    { text: "Wow no cow!"},
+    { text: "One \"plants also have feelings\" away from risking it all"},
+    { text: "vegan btw"},
+    { text: "Level 5 Vegan. Won’t eat anything that casts a shadow"},
+    { text: "\"bUt whEre dO yOu Get YoUr pRoteIn fRoM???/1?\""},
+    { text: "26326 desert island metaphors later..."},
+    { text: "Not because I love animals, but because I f%*#£ng hate plants"},
+    { text: "It's 5 o'guac somewhere"},
+    { text: "Blocking vegans on Instagram won't unblock your arteries, Richard"},
+    { text: "Deficient in v̶i̶t̶a̶m̶i̶n̶ ̶B̶1̶2̶ hypocrisy"}
+  ];
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  var text = document.getElementById("text");
+  text.innerHTML = quote.text;
+
+</script>
