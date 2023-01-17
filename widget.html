@@ -3,7 +3,7 @@
 </div>
 
 <script>
-  // array of quotes
+  // list of quotes
   var quotes = [
     { text: "Turning strangers into nutritionists since 2018!"},
     { text: "Eat your veggies!"},
@@ -24,7 +24,9 @@
     { text: "Blocking vegans on Instagram won't unblock your arteries, Richard"},
     { text: "Deficient in v̶i̶t̶a̶m̶i̶n̶ ̶B̶1̶2̶ hypocrisy"}
   ];
+  //randomizer
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  // assigns the quote back to the id text
   var text = document.getElementById("text");
   text.innerHTML = quote.text;
 
